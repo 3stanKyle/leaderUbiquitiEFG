@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/leaderUbiquitiEFG/static/css/main.c48210ac.css",
+    "main.js": "/leaderUbiquitiEFG/static/js/main.60e0fd95.js",
+    "static/js/453.842999be.chunk.js": "/leaderUbiquitiEFG/static/js/453.842999be.chunk.js",
+    "index.html": "/leaderUbiquitiEFG/index.html",
+    "main.c48210ac.css.map": "/leaderUbiquitiEFG/static/css/main.c48210ac.css.map",
+    "main.60e0fd95.js.map": "/leaderUbiquitiEFG/static/js/main.60e0fd95.js.map",
+    "453.842999be.chunk.js.map": "/leaderUbiquitiEFG/static/js/453.842999be.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.c48210ac.css",
+    "static/js/main.60e0fd95.js"
+  ]
+}
