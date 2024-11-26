@@ -1,0 +1,244 @@
+/* Dashboard.css */
+@font-face { 
+    font-family: "UI Sans"; 
+    src: url("https://ui.com/microsite/fonts/ui-sans-v9-regular.woff2") format("woff2"); 
+    font-style: normal; 
+    font-weight: 400; 
+  }
+  
+  @font-face { 
+    font-family: "UI Sans"; 
+    src: url("https://ui.com/microsite/fonts/ui-sans-v9-bold.woff2") format("woff2"); 
+    font-style: normal; 
+    font-weight: 700; 
+  }
+  
+  :root {
+    --ui-blue: #036fff;
+    --ui-blue-dark: #0255d9;
+    --ui-blue-light: #006aff;
+    --font-family: "UI Sans", -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen-Sans, Ubuntu, Cantarell, sans-serif;
+  }
+  
+  * {
+    font-family: var(--font-family);
+  }
+  
+  body {
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+  }
+  
+  .dashboard {
+    padding: 24px;
+    min-height: 100vh;
+    background-image: url('https://ui.com/microsite/static/media/background-image.da6c8cbf.png');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    color: #ffffff;
+  }
+  
+  .header {
+    text-align: center;
+    margin-bottom: 32px;
+  }
+  
+  .header h1 {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #ffffff;
+    margin-bottom: 8px;
+  }
+  
+  .header p {
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 1.1rem;
+  }
+  
+  /* Alert styles */
+  .alert {
+    background: rgba(3, 111, 255, 0.1);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(3, 111, 255, 0.2);
+    border-radius: 6px;
+    padding: 16px;
+    margin-bottom: 24px;
+  }
+  
+  .alert-title {
+    display: flex;
+    align-items: center;
+    color: #ffffff;
+    font-weight: 700;
+    margin-bottom: 8px;
+  }
+  
+  .alert-description {
+    color: rgba(255, 255, 255, 0.8);
+  }
+  
+  /* Card styles */
+  .card {
+    background: rgba(31, 41, 55, 0.4);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 8px;
+    margin-bottom: 24px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .card-header {
+    padding: 16px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  }
+  
+  .card-title {
+    display: flex;
+    align-items: center;
+    color: #ffffff;
+    font-weight: 700;
+    font-size: 1.25rem;
+  }
+  
+  .card-content {
+    padding: 16px;
+  }
+  
+  /* Chart styles - Remove hover effects */
+  .recharts-default-tooltip {
+    background: rgba(31, 41, 55, 0.8) !important;
+    backdrop-filter: blur(10px) !important;
+    -webkit-backdrop-filter: blur(10px) !important;
+    border: 1px solid rgba(255, 255, 255, 0.1) !important;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1) !important;
+  }
+  
+  .recharts-tooltip-cursor {
+    display: none !important;
+  }
+  
+  /* Rest of the styles remain the same but with transparency */
+  .table-container {
+    overflow-x: auto;
+  }
+  
+  .comparison-table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .comparison-table th,
+  .comparison-table td {
+    padding: 12px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  }
+  
+  .comparison-table th {
+    text-align: left;
+    color: rgba(255, 255, 255, 0.9);
+    font-weight: 700;
+  }
+  
+  .comparison-table td {
+    color: rgba(255, 255, 255, 0.8);
+  }
+  
+  .comparison-table td.highlight {
+    color: var(--ui-blue);
+    font-weight: 700;
+  }
+  
+  /* Expandable section styles */
+  .expandable-section {
+    margin-top: 16px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 8px;
+    background: rgba(31, 41, 55, 0.4);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+  }
+  
+  .expandable-button {
+    width: 100%;
+    padding: 16px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: left;
+    color: rgba(255, 255, 255, 0.9);
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-weight: 700;
+    transition: background-color 0.2s ease;
+  }
+  
+  .expandable-button:hover {
+    background: rgba(3, 111, 255, 0.1);
+  }
+  
+  .expandable-content {
+    padding: 16px;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    color: rgba(255, 255, 255, 0.8);
+  }
+  
+  /* Chart specific styles */
+  .chart-container {
+    height: 320px;
+  }
+  
+  .performance-chart {
+    height: 256px;
+  }
+  
+  /* Grid layouts */
+  .grid-3 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+  }
+  
+  @media (max-width: 768px) {
+    .grid-3 {
+      grid-template-columns: 1fr;
+    }
+  }
+  
+  /* Feature lists */
+  .feature-list {
+    list-style-type: disc;
+    padding-left: 24px;
+    margin: 0;
+  }
+  
+  .feature-list li {
+    margin-bottom: 8px;
+    line-height: 1.5;
+    color: rgba(255, 255, 255, 0.8);
+  }
+  
+  /* Charts customization */
+  .recharts-cartesian-grid-horizontal line,
+  .recharts-cartesian-grid-vertical line {
+    stroke: rgba(255, 255, 255, 0.1);
+  }
+  
+  .recharts-text {
+    fill: rgba(255, 255, 255, 0.8);
+    font-family: var(--font-family);
+  }
+  
+  .recharts-legend-item-text {
+    color: rgba(255, 255, 255, 0.8) !important;
+    font-family: var(--font-family);
+  }
+  
+  
+  .recharts-bar-rectangle {
+    fill: var(--ui-blue) !important;
+  }

@@ -1,0 +1,29 @@
+.table-container {
+  overflow-x: auto;
+}
+
+.comparison-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.comparison-table th,
+.comparison-table td {
+  padding: 12px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  text-align: left;
+}
+
+.comparison-table th {
+  color: rgba(255, 255, 255, 0.9);
+  font-weight: 700;
+}
+
+.comparison-table td {
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.comparison-table td.highlight {
+  color: #036fff;
+  font-weight: 700;
+}

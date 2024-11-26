@@ -1,0 +1,76 @@
+.licensing-models-section {
+    padding: 40px 0;
+  }
+  
+  .licensing-models-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 32px;
+    max-width: 1196px;
+    margin: 0 auto;
+  }
+  
+  .licensing-models-card {
+    background: rgba(0, 0, 0, 0.4);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 12px;
+    padding: 32px;
+    transition: transform 0.3s ease;
+  }
+  
+  .licensing-models-card:hover {
+    transform: translateY(-4px);
+  }
+  
+  .licensing-models-card h2 {
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 8px;
+    color: #ffffff;
+  }
+  
+  .licensing-models-card .subtitle {
+    color: rgb(159, 165, 173);
+    font-size: 16px;
+    margin-bottom: 24px;
+  }
+  
+  .feature-list {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+  }
+  
+  /* Ubiquiti features in blue */
+  .ubiquiti .feature h3 {
+    font-size: 18px;
+    font-weight: 700;
+    color: var(--ui-blue-light);
+    margin-bottom: 8px;
+  }
+  
+  /* Fortinet features in red */
+  .fortinet .feature h3 {
+    font-size: 18px;
+    font-weight: 700;
+    color: #ff3b30;
+    margin-bottom: 8px;
+  }
+  
+  .feature p {
+    color: rgb(159, 165, 173);
+    font-size: 16px;
+    line-height: 1.5;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .licensing-models-grid {
+      grid-template-columns: 1fr;
+    }
+    
+    .licensing-models-section {
+      padding: 40px 24px;
+    }
+  }

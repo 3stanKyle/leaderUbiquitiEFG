@@ -1,0 +1,212 @@
+.contact-section {
+    width: 100%;
+    height: 803px;
+    background-image: url('https://content.leadermarketing.com.au/assets/uploads/EFG-BG_DARK.jpg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-color: #000;
+    background-size: 1920px 803px; /* Default size for screens <= 1920px */
+    color: #ffffff;
+    padding: 0;
+    display: flex;
+    align-items: center;
+  }
+  
+  /* For screens larger than 1920px */
+  @media (min-width: 1921px) {
+    .contact-section {
+      /* Calculate height proportionally based on screen width */
+      height: calc(41.82vw); /* 803/1920 ≈ 0.4182 or 41.82% */
+      background-size: 100% 100%; /* Stretch to fill container while maintaining aspect ratio */
+    }
+  }
+  
+  .contact-container {
+    max-width: 1196px;
+    margin: 0 auto;
+    padding: 0 24px;
+    width: 100%;
+    display: block;
+  }
+  
+  /* Rest of your existing styles remain the same */
+  .contact-us-content {
+    max-width: 600px;
+    margin: 0;
+    text-align: left;
+  }
+  
+  .contact-us-text {
+    text-align: left;
+    margin-bottom: 40px;
+  }
+  
+  .contact-us-text h2 {
+    font-size: 42px;
+    font-weight: 700;
+    margin-bottom: 16px;
+  }
+  
+  .contact-us-text p {
+    font-size: 18px;
+    line-height: 1.6;
+    color: rgb(159, 165, 173);
+  }
+  
+  .contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .form-group {
+    width: 100%;
+  }
+  
+  .form-group input,
+  .form-group textarea {
+    width: 100%;
+    padding: 16px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 8px;
+    background: rgba(0, 0, 0, 0.2);
+    color: #ffffff;
+    font-size: 16px;
+    transition: border-color 0.3s ease;
+  }
+  
+  .form-group textarea {
+    height: 120px;
+    resize: vertical;
+  }
+  
+  .form-group input:focus,
+  .form-group textarea:focus {
+    outline: none;
+    border-color: var(--ui-blue);
+    background: rgba(0, 0, 0, 0.3);
+  }
+  
+  .form-group input::placeholder,
+  .form-group textarea::placeholder {
+    color: rgba(255, 255, 255, 0.6);
+  }
+  
+  .submit-button {
+    background-color: var(--ui-blue);
+    color: #ffffff;
+    padding: 16px 32px;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    align-self: flex-start;
+    width: auto;
+  }
+  
+  .submit-button:hover {
+    background-color: var(--ui-blue-dark);
+  }
+  
+  /* Large tablets and small desktops */
+  @media (max-width: 1200px) {
+    .contact-section {
+      background-size: cover;
+    }
+    
+    .contact-container {
+      padding: 0 40px;
+    }
+    
+    .contact-us-text h2 {
+      font-size: 36px;
+    }
+  }
+  
+  /* Tablets */
+  @media (max-width: 992px) {
+    .contact-section {
+      height: auto;
+      min-height: 803px;
+      padding: 80px 0;
+    }
+    
+    .contact-us-content {
+      max-width: 100%;
+    }
+    
+    .contact-us-text h2 {
+      font-size: 32px;
+    }
+    
+    .contact-us-text p {
+      font-size: 16px;
+    }
+  }
+  
+  /* Large phones and small tablets */
+  @media (max-width: 768px) {
+    .contact-section {
+      padding: 60px 0;
+      background-size: cover;
+      background-position: center left 35%;
+    }
+    
+    .contact-container {
+      padding: 0 20px;
+    }
+    
+    .contact-us-text h2 {
+      font-size: 28px;
+    }
+    
+    .contact-us-text p {
+      font-size: 15px;
+      line-height: 1.5;
+    }
+    
+    .form-group input,
+    .form-group textarea {
+      padding: 14px;
+      font-size: 15px;
+    }
+  }
+  
+  /* Small phones */
+  @media (max-width: 480px) {
+    .contact-section {
+      min-height: auto;
+      padding: 40px 0;
+    }
+    
+    .contact-container {
+      padding: 0 16px;
+    }
+    
+    .contact-us-text {
+      margin-bottom: 30px;
+    }
+    
+    .contact-us-text h2 {
+      font-size: 24px;
+      margin-bottom: 12px;
+    }
+    
+    .contact-form {
+      gap: 16px;
+    }
+    
+    .form-group input,
+    .form-group textarea {
+      padding: 12px;
+      font-size: 14px;
+    }
+    
+    .submit-button {
+      width: 100%;
+      padding: 14px 24px;
+      font-size: 15px;
+    }
+  }

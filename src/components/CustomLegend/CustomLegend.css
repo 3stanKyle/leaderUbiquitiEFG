@@ -1,0 +1,22 @@
+.custom-legend {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+.custom-legend-item {
+  display: flex;
+  align-items: center;
+  margin: 0 10px;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.custom-legend-item img {
+  width: 24px;
+  height: 24px;
+  margin-right: 8px;
+  object-fit: contain;
+}

@@ -1,0 +1,61 @@
+/* components/CostAnalysis/CostAnalysis.css */
+.subheadline {
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 1.1rem;
+  line-height: 1.5;
+  margin-top: 12px;
+}
+
+.analysis-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+  margin-top: 24px;
+}
+
+.analysis-item {
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 8px;
+  padding: 24px;
+  transition: transform 0.2s ease, background-color 0.2s ease;
+}
+
+.analysis-item:hover {
+  background: rgba(255, 255, 255, 0.08);
+  transform: translateY(-2px);
+}
+
+.analysis-icon {
+  font-size: 2rem;
+  margin-bottom: 16px;
+}
+
+.analysis-title {
+  color: #ffffff;
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-bottom: 12px;
+}
+
+.analysis-content {
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+/* Responsive Design */
+@media (max-width: 1200px) {
+  .analysis-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 640px) {
+  .analysis-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .analysis-item {
+    padding: 20px;
+  }
+}

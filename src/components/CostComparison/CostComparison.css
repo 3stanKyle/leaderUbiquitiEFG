@@ -1,0 +1,41 @@
+/* components/CostComparison/CostComparison.css */
+.cost-comparison-section {
+  margin-bottom: 24px;
+}
+
+.cost-comparison-header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.cost-comparison-header h2 {
+  color: #ffffff;
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+
+.cost-comparison-subheadline {
+  color:rgb(159, 165, 173);
+  font-size: 1rem;
+  line-height: 1.5;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.chart-container {
+  height: 320px;
+  margin-bottom: 24px;
+}
+
+
+/* Responsive Design */
+@media (max-width: 640px) {
+  .cost-comparison-header {
+    text-align: center;
+  }
+  
+  .chart-container {
+    height: 280px;
+  }
+}
